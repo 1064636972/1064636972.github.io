@@ -1,0 +1,415 @@
+ul,p,h1,h2,h3,h4,h5,h6,input,body{
+    font-family: "HanHei SC","PingHei","PingFang SC","STHeitiSC-Light","HelveticaNeue","Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img,div{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    height: auto;
+    font-size: 14px;
+}
+ul li{
+    list-style: none;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #393939;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 222817 */
+    src: url('http://at.alicdn.com/t/font_igechb0u6vbwqaor.eot');
+    src: url('http://at.alicdn.com/t/font_igechb0u6vbwqaor.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_igechb0u6vbwqaor.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_igechb0u6vbwqaor.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_igechb0u6vbwqaor.svg#iconfont') format('svg');
+}
+.icon{
+    font-family: 'iconfont';
+    font-size: 16px;
+    color: #000;
+}
+.icon:hover{
+    color: #888;
+}
+
+
+/*导航栏 开始*/
+.nav{
+    width:100%;
+    height:44px;
+    background:rgba(0,0,0,0.95);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+    position: fixed;
+    z-index: 999;
+    top:0;
+}
+.nav-middle{
+    width:1000px;
+    height: 44px;
+    text-align: justify;
+    margin:0 auto;
+}
+.nav-middle:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.nav-list{
+    height: 44px;
+    line-height:44px;
+    display: inline-block;
+}
+.nav-list a{
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.nav-list a:hover{
+    color: #888;
+}
+.hidden-b{
+    display: none;
+}
+@media screen and (max-width: 1068px){
+    .nav-middle{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 735px){
+    .hidden-b{
+        display: inline-block;
+    }
+    .hidden-s{
+        display: none;
+    }
+}
+
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 544px;
+    position: relative;
+    background: #0A0A0A url(../img/banner-iphone1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 120%;
+}
+.text-iphone{
+    width: 100%;
+    height: 77px;
+    position: absolute;
+    top:10%;
+}
+.text-iphone1{
+    width:100%;
+    text-align: center;
+    color: #fff;
+}
+.text-iphone2{
+    width:100%;
+    color: #fff;
+    text-align: center;
+}
+@media screen and (max-width: 1068px) {
+    .banner{
+        height: 500px;
+        background: #0A0A0A url(../img/banner-iphone2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 110%;
+    }
+    .text-wen{
+        /*position: relative;*/
+        /*z-index: 99;*/
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 735px){
+    .banner{
+        height: 480px;
+        background: #0A0A0A url(../img/banner-iphone3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 110%;
+    }
+
+    .text-wen{
+        /*position: relative;*/
+        /*z-index: 99;*/
+        font-size: 20px;
+    }
+}
+
+
+/*产品展示*/
+.box{
+    width:100%;
+    height:auto;
+    margin: 2px auto;
+    /*display: none;*/
+    /*overflow: hidden;*/
+    /*border:1px solid red;*/
+}
+.box a{
+    display:block;
+    width:25%;
+    height:200px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box:after{
+    content: '';
+    display: block;
+    clear: both;
+    /*width: 100px;*/
+    /*height: 30px;*/
+    /*background: red;*/
+}
+
+.box a:nth-child(1){
+    background-image: url(../img/m1.jpg);
+    border-right: 2px solid #fff;
+}
+.box a:nth-child(2){
+    background-image: url(../img/m2.jpg);
+    border-right: 2px solid #fff;
+}
+.box a:nth-child(3){
+    background-image: url(../img/m3.jpg);
+    border-right: 2px solid #fff;
+}
+.box a:nth-child(4){
+    background-image: url(../img/m4.jpg);
+}
+@media screen and (max-width: 1068px){
+    .box a{
+        width:50%;
+    }
+    .box a:nth-child(1){
+        background-image: url(../img/m1.jpg);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .box a:nth-child(2){
+        background-image: url(../img/m2.jpg);
+        border-bottom: 2px solid #fff;
+    }
+    .box a:nth-child(3){
+        background-image: url(../img/m3.jpg);
+        border-right: 2px solid #fff;
+    }
+    .box a:nth-child(4){
+        background-image: url(../img/m4.jpg);
+    }
+}
+@media screen and (max-width: 735px){
+    .box a{
+        width:100%;
+    }
+    .box a:nth-child(1){
+        background-image: url(../img/s1.jpg);
+        border-bottom: 2px solid #fff;
+    }
+    .box a:nth-child(2){
+        background-image: url(../img/s2.jpg);
+        border-bottom: 2px solid #fff;
+    }
+    .box a:nth-child(3){
+        background-image: url(../img/s3.jpg);
+        border-bottom: 2px solid #fff;
+    }
+    .box a:nth-child(4){
+        background-image: url(../img/s4.jpg);
+    }
+}
+
+
+/*站点地图*/
+.webadd{
+    width:100%;
+    height:auto;
+    background: #f2f2f2;
+    font-size: 12px;
+    /*float: left;*/
+
+}
+.footer{
+    width:1024px;
+    height:384px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.add-line1{
+    /*width: 980px;*/
+    height: 48px;
+    padding:16px 0 11px;
+    border-bottom: 1px solid #e3e3e3;
+    color: #cccccc;
+    /*background: red;*/
+}
+.add-line1 ul li{
+    padding-bottom: 5px;
+}
+.add-line2{
+    /*width: 980px;*/
+    height: 240px;
+    color: #444;
+    padding-top: 20px;
+}
+.line2-col{
+    width:20%;
+    height:220px;
+    float: left;
+}
+.line2-col ul li a:hover{
+    text-decoration: underline;
+}
+.add-line3{
+    /*width:980px;*/
+    height: 96px;
+    padding: 20px 0 24px;
+}
+.line3-line1{
+    /*width:980px;*/
+    height:26px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom:5px;
+    margin-bottom: 6px;
+}
+.flag{
+    width: 44px;
+    height:20px;
+    padding-left:20px;
+    background: url("../img/China.png") no-repeat 0 2px;
+    float: right;
+}
+.line3-line2{
+    /*width:632px;*/
+    height:20px;
+}
+.line3-line2 span,.line3-line2 a{
+ display: inline-block;
+}
+.line3-line2-l{
+    border-left: 1px solid #e3e3e3;
+    padding: 0 6px;
+}
+.line3-line2 a:nth-child(2){
+    border-left:none;
+}
+.line3-line2:hover{
+    text-decoration: underline;
+}
+.line3-line2 span{
+    margin-right:15px;
+}
+.last-line{
+    /*width:980px;*/
+    height:20px;
+}
+.last-line a:hover{
+    text-decoration: none;
+}
+.jiahao{
+    display: none;
+}
+
+@media screen and (max-width:1068px) {
+    .footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width:735px){
+    .footer{
+        width:100%;
+        height:auto;
+    }
+    .add-line1{
+         height: auto;
+         padding:16px 0 12px;
+         border-bottom: 1px solid #e3e3e3;
+         color: #cccccc;
+     }
+    .add-line1 ul li{
+        padding-bottom: 0;
+    }
+    .add-line2{
+        width: 100%;
+        height: auto;
+        color: #444;
+        /*padding-top: 20px;*/
+    }
+    .add-line2 ul{
+        display: none;
+    }
+    .line2-col{
+        width: 100%;
+        height: auto;
+        border-bottom:1px solid #e3e3e3;
+        float:none;
+    }
+    .jiahao{
+        float: right;
+    }
+    .aaa{
+        float:left;
+    }
+    .line2-col div{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .line3-line1{
+        /*width:980px;*/
+        height:auto;
+        border-bottom: 1px solid #e3e3e3;
+        padding-bottom:5px;
+        margin-bottom: 10px;
+    }
+    .flag{
+        float: none;
+    }
+    .line3-line2 span{
+        height: auto;
+        display: block;
+
+    }
+    .line3-line2 a{
+        height: auto;
+        margin: 0;
+        padding-left: 0;
+    }
+    .last-line{
+        height:auto;
+        margin-top: 20px;
+    }
+    .line3-line2-1{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:350px){
+    body{
+        width: 350px;
+    }
+}
