@@ -1,0 +1,495 @@
+ul,p,h1,h2,h3,h4,h5,h6,input,body,button{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img,div,input{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ul li{
+    list-style: none;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    /*color: #999;*/
+}
+
+html{
+    font-size: 100px;
+}
+body{
+    width: 7.5rem;
+    height: auto;
+    min-width: 320px;
+    line-height: 1.5;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+    background: #F2F2F2;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 320px){
+	html{
+		font-size: 42.6px;
+	}
+    body,.head-s1>input{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 375px){
+	html{
+		font-size: 50px;
+	}
+    body,.head-s1>input{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 414px){
+	html{
+		font-size:55.2px;
+	}
+    body,.head-s1>input{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 750px){
+	html{
+		font-size:100px;
+	}
+    body,.head-s1>input{
+        font-size: 24px;
+    }
+}
+
+
+
+
+/*header*/
+.head{
+    width: 7.5rem;
+    height: 0.88rem;
+    background: #FABC09;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.head-f{
+    display: block;
+    width: 0.94rem;
+    height: 0.88rem;
+    background: url("../img/fenlei.png") no-repeat center;
+    background-size: 0.44rem 0.7rem;
+}
+.head-s{
+    width: 5.59rem;
+    height: 0.88rem;
+    padding-top: 0.14rem;
+}
+.head-s1{
+    width: 5.59rem;
+    height:0.6rem;
+    background: #FEF1CE;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.head-button{
+    display: block;
+    width: 0.55rem;
+    height: 0.6rem;
+    background: url("../img/sousuo.png") no-repeat 0.28rem 0.16rem;
+}
+.head-s1>input{
+    width: 5.04rem;
+    height: 0.60rem;
+    padding: 0.1rem;
+    font-size: 0.24rem;
+    background: #FEF1CE;
+}
+.head-c{
+    display: block;
+    width: 0.97rem;
+    height:0.88rem;
+    background: url("../img/shopcar.png") no-repeat center;
+    background-size: 0.63rem 0.68rem;
+}
+
+
+/*替header占位*/
+.head-jia{
+    width: 7.5rem;
+    height: 0.88rem;
+}
+
+
+/*banner*/
+.banner{
+    width: 7.5rem;
+    height: 3.2rem;
+}
+banner>img{
+	width: 7.5rem;
+	height: 3.2rem;
+}
+
+
+/*type*/
+.type{
+    width: 7.5rem;
+    height: 3.18rem;
+    padding-top: 0.24rem;
+    border-bottom:1px solid #F2F2F2;
+    background: #fff;
+}
+.type-main{
+    width: 7.5rem;
+    height: 2.94rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.type1{
+    display: block;
+    width: 1.5rem;
+    height: 1.37rem;
+    margin-bottom: 0.1rem;
+}
+.type1-tu{
+    width:0.8rem;
+    height: 0.8rem;
+    margin:0 auto;
+}
+.type1-tu>img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.type1-name{
+    width: 1.5rem;
+    height: 0.57rem;
+    line-height: 0.57rem;
+    text-align: center;
+}
+.type1-name{
+    font-size: 0.24rem;
+    color: #7b7f82;
+}
+
+
+/*苏宁头条*/
+.toutiao{
+    width: 7.5rem;
+    height: 1.04rem;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.toutiao-tu{
+    width: 1.45rem;
+    height: 1.04rem;
+    background: url("../img/suningtoutiao.png") no-repeat center;
+    background-size: 1.45rem 0.64rem;
+}
+.toutiao-line{
+    width: 1px;
+    height: 0.4rem;
+    background: #dcdcdc;
+    margin: 0.3rem 0.28rem 0.1rem 0.26rem;
+}
+.toutiao-title{
+    width: 5.33rem;
+    height: 1.04rem;
+    padding-top: 0.2rem;
+}
+.tt1{
+    width: 5.33rem;
+    height: 0.64rem;
+}
+.tt1-line1{
+    width: 5.33rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    font-size: 0.24rem;
+}
+.tte-left{
+    display: inline-block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background: #FFC001;
+    color: #FFC001;
+    float: left;
+}
+
+
+/*掌上抢*/
+.qiang{
+    margin-top: 0.23rem;
+    width: 7.5rem;
+    height: 3.4rem;
+    background: #fff;
+    overflow: hidden;
+}
+.qiang-top{
+    width: 7.5rem;
+    height: 0.8rem;
+}
+.qiang11{
+    width: 1.36rem;
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    background: url("../img/zhangshangqiang.png") no-repeat center;
+    background-size: 1.36rem 0.47rem;
+    float: left;
+}
+.daojishi{
+    width: 2.2rem;
+    height: 0.8rem;
+    padding-top:0.35rem;
+    font-size: 0.2rem;
+    margin-left: 0.2rem;
+    color: #fa4b4b;
+    float: left;
+}
+.daojishi input{
+    width: 0.28rem;
+    height: 0.28rem;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 0.05rem;
+    color: #000;
+}
+.qiang13{
+    width: 1rem;
+    height: 0.8rem;
+    float: right;
+    padding-top: 0.3rem;
+}
+.qianghaohuo{
+    width: 0.8rem;
+    height: 0.35rem;
+    background: #FFC001;
+    border-radius: 0.13rem;
+    font-size: 0.2rem;
+    color: #783e18;
+    float: left;
+    text-align: center;
+    line-height: 0.35rem;
+}
+.you{
+    width: 0.15rem;
+    height: 0.35rem;
+    margin-left: 0.05rem;
+    float: left;
+    background: url("../img/you.png") no-repeat center;
+    background-size: 0.15rem 0.28rem;
+}
+.qiang-bottom{
+    width: auto;
+    height: 2.36rem;
+    margin-left: 0.2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    /*z-index: 1;*/
+}
+.qb1{
+    width: 2.22rem;
+    height: 2.36rem;
+    border: 1px solid #ddd;
+    margin-right: 0.08rem;
+    position: relative;
+    z-index: 1;
+}
+.qb1-top{
+    width: 2.22rem;
+    height: 1.66rem;
+}
+.qb1-top>img{
+    width: 2.20rem;
+    height: 1.66rem;
+}
+.qb1-price{
+    width: 2.20rem;
+    height: 0.7rem;
+    background: #ddd;
+}
+.qb1-price-1{
+    width: 2rem;
+    height: 0.39rem;
+    margin-left: 0.2rem;
+    font-weight: 400;
+    color: #d00;
+}
+.qb1b-1{
+    font-size: 0.28rem;
+}
+.qb1b-2{
+    font-size: 0.24rem;
+}
+.qb1-price-2{
+    width: 2rem;
+    height: 0.27rem;
+    margin-left: 0.2rem;
+    color: #999;
+    font-size: 0.18rem;
+    text-decoration: line-through;
+}
+.xiangxia{
+    width: 0.72rem;
+    height: 0.76rem;
+    background: url("../img/xiangxia.png") no-repeat center;
+    background-size: 0.72rem 0.76rem;
+    position: absolute;
+    z-index: 2;
+    right: 0.05rem;
+    bottom: -0.02rem;
+}
+.xiangxia-t{
+    width: 0.72rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+.xiangxia-t>span:first-child{
+    font-size: 0.3rem;
+    margin-right: -0.02rem;
+}
+.xiangxia-t>span:nth-child(2){
+    font-size: 0.24rem;
+    margin: 0 -0.02rem;
+}
+.xiangxia-t>span:last-child{
+    font-size: 0.24rem;
+    margin-left: -0.02rem;
+}
+
+
+/*分类标题*/
+.bigtitle{
+    width: 7.5rem;
+    height: 0.6rem;
+    margin-top: 0.22rem;
+    /*margin-bottom: 1px;*/
+}
+.bigtitle{
+    width: 7.5rem;
+    height: 0.61rem;
+}
+
+
+/*一行两列 左边大*/
+.r1c2-big{
+    width: 7.5rem;
+    height: 2.9rem;
+    margin-bottom: 1px;
+    background: #fff;
+}
+.r1c2-big-left{
+    width: 3.75rem;
+    height: 2.9rem;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+}
+.r1c2-big-left>img{
+    width: 3.74rem;
+    height: 2.9rem;
+}
+.r1c2-big-right{
+    width: 3.75rem;
+    height: 2.9rem;
+    float: right;
+}
+.r1c2-br-top{
+    width: 3.75rem;
+    height: 1.45rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+.r1c2-br-top>img{
+    width: 3.74rem;
+    height: 1.44rem;
+}
+
+
+/*一行四列*/
+.r1c4{
+    width: 7.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.r1c4-1{
+    width: 1.86rem;
+    height: 3rem;
+    margin-left: 1px;
+}
+.r1c4-1>img{
+    width: 1.86rem;
+    height: 3rem;
+}
+
+
+/*一行两列 左右同大*/
+.r1c2{
+    width: 7.5rem;
+    height:1.44rem;
+    border-bottom: 1px;
+}
+.r1c2-img{
+    width: 3.75rem;
+    height: 1.44rem;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+}
+.r1c2-img>img{
+    width: 3.75rem;
+    height:1.44rem;
+}
+
+
+/*广告条*/
+.guanggao{
+    width: 7.5rem;
+    height:2rem;
+    margin-top: 0.22rem;
+}
+.guanggao>img{
+    width: 7.5rem;
+    height: 2rem;
+}
+
+
+/*一行两列  同大2*/
+.r1c2-2{
+    width: 7.5rem;
+    height: 2.9rem;
+    margin-bottom: 1px;
+    background: #fff;
+}
+.r1c2-2-img{
+    width: 3.75rem;
+    height: 2.9rem;
+    border-right: 1px solid #f2f2f2;
+    float: left;
+    /*margin-right: 1px;*/
+}
+.r1c2-big-left>img{
+    width: 3.74rem;
+    height: 2.9rem;
+}
+
